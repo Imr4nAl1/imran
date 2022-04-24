@@ -1,2 +1,0 @@
-# imran
-Moshin gando
